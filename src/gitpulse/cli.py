@@ -15,6 +15,15 @@ from gitpulse import __version__
 from gitpulse.analyzer import GitPulseError, RepoAnalyzer
 from gitpulse.formatters import format_markdown_report
 
+# Ensure Windows terminals properly render unicode characters
+for stream in (sys.stdout, sys.stderr):
+    reconfigure_fn = getattr(stream, "reconfigure", None)
+    if callable(reconfigure_fn):
+        try:
+            reconfigure_fn(encoding="utf-8", errors="replace")
+        except Exception:
+            pass
+
 
 def build_parser() -> argparse.ArgumentParser:
     """Construct the CLI argument parser."""
