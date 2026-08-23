@@ -1,0 +1,84 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "gitpulse"
+version = "0.1.0"
+description = "A visual Git repository analyzer and CLI dashboard for developers."
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "Yannis", email = "author@example.com" }
+]
+keywords = [
+    "git",
+    "analyzer",
+    "cli",
+    "dashboard",
+    "developer-tools",
+    "metrics",
+    "statistics"
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Software Development :: Version Control :: Git",
+    "Topic :: Utilities",
+    "Typing :: Typed",
+]
+dependencies = [
+    "rich>=13.0.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-cov>=4.0.0",
+    "ruff>=0.4.0",
+    "mypy>=1.10.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/gitpulse"
+Documentation = "https://github.com/yourusername/gitpulse#readme"
+Repository = "https://github.com/yourusername/gitpulse"
+Issues = "https://github.com/yourusername/gitpulse/issues"
+Changelog = "https://github.com/yourusername/gitpulse/blob/main/CHANGELOG.md"
+
+[project.scripts]
+gitpulse = "gitpulse.cli:main"
+git-pulse = "gitpulse.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gitpulse"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM"]
+ignore = []
+
+[tool.pytest.ini_options]
+minversion = "8.0"
+addopts = "-ra -q --strict-markers"
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.mypy]
+python_version = "3.10"
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_defs = true
+check_untyped_defs = true
