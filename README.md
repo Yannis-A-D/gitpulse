@@ -4,7 +4,7 @@
 
 [![PyPI version](https://img.shields.io/pypi/v/gitpulse.svg?color=blue)](https://pypi.org/project/gitpulse/)
 [![Python versions](https://img.shields.io/pypi/pyversions/gitpulse.svg)](https://pypi.org/project/gitpulse/)
-[![CI Tests](https://github.com/yourusername/gitpulse/actions/workflows/test.yml/badge.svg)](https://github.com/yourusername/gitpulse/actions)
+[![CI Tests](https://github.com/Yannis-A-D/gitpulse/actions/workflows/test.yml/badge.svg)](https://github.com/Yannis-A-D/gitpulse/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
 
@@ -109,7 +109,7 @@ json_data = analyzer.to_json()
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/gitpulse.git
+   git clone https://github.com/Yannis-A-D/gitpulse.git
    cd gitpulse
    ```
 

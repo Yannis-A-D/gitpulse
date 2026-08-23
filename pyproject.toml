@@ -49,11 +49,11 @@ dev = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/yourusername/gitpulse"
-Documentation = "https://github.com/yourusername/gitpulse#readme"
-Repository = "https://github.com/yourusername/gitpulse"
-Issues = "https://github.com/yourusername/gitpulse/issues"
-Changelog = "https://github.com/yourusername/gitpulse/blob/main/CHANGELOG.md"
+Homepage = "https://github.com/Yannis-A-D/gitpulse"
+Documentation = "https://github.com/Yannis-A-D/gitpulse#readme"
+Repository = "https://github.com/Yannis-A-D/gitpulse"
+Issues = "https://github.com/Yannis-A-D/gitpulse/issues"
+Changelog = "https://github.com/Yannis-A-D/gitpulse/blob/main/CHANGELOG.md"
 
 [project.scripts]
 gitpulse = "gitpulse.cli:main"
